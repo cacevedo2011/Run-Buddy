@@ -1,0 +1,41 @@
+/*It is typically called a wildcard, but in CSS it is known as a universal selector. This is essentially a catch-all selector that says, 
+"I won't match one thing—I'll match everything!"*/
+*{/*This basically selects all the elements*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*More on this crazy alphanumerical values in a minute!*/
+    color: #39a6b2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Apply styles to <header>*/
+header {
+/*The padding on the header is applying 20px to the top and bottom, then 35px to the left and right */
+    padding: 20px 35px; 
+    background-color: #39a6b2;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: #fce138;
+/*In the above code, we are styling all <a> elements inside <header>, including those in <h1> and <nav>. We used a new property here as well:*/
+}
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+header nav ul li{
+    display: inline;
+}
+header nav ul li a{
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
