@@ -5,6 +5,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*This is to make the label hero-form look nice*/
+.hero-form h3{
+    margin: 0px;
+    font-size: 24px;
+}
+.hero-form p{
+margin: 5px 0 15px 0;
+}
+.form-input{
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.hero-form label{
+    margin: 0 5px;
+}
+.hero-form button{
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+/*End of label*/
 body{
     /*More on this crazy alphanumerical values in a minute*/
     color: #39a6b2;
@@ -70,6 +98,7 @@ section{
     height: 600px;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .hero-form{
     background-color: #fce138;
@@ -80,6 +109,8 @@ section{
     border-width: 3px;
     border-color: #024e76;
 /*This could be the alternative you can put so you dont write border-style, border-width, and border-color:
-
     border: solid 3px #024e76*/
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
 }
