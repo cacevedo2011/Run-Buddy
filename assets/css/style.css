@@ -1,4 +1,5 @@
-/*It is typically called a wildcard, but in CSS it is known as a universal selector. This is essentially a catch-all selector that says, 
+/*It is typically called a wildcard, but in CSS it is known as a universal 
+selector. This is essentially a catch-all selector that says, 
 "I won't match one thing—I'll match everything!"*/
 *{/*This basically selects all the elements*/
     margin: 0;
@@ -33,12 +34,14 @@ margin: 5px 0 15px 0;
     font-size: 16px;
 }
 /*End of label*/
+
 body{
     /*More on this crazy alphanumerical values in a minute*/
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*Apply styles to <header>*/
+
+/*Apply styles to <header> and <footer>*/
 header {
 /*The padding on the header is applying 20px to the top and bottom, then 35px to the left and right */
     padding: 20px 35px; 
@@ -54,7 +57,8 @@ header h1 {
 header a {
     text-decoration: none;
     color: #fce138;
-/*In the above code, we are styling all <a> elements inside <header>, including those in <h1> and <nav>. We used a new property here as well:*/
+/*In the above code, we are styling all <a> elements inside <header>, 
+including those in <h1> and <nav>. We used a new property here as well:*/
 }
 header nav{
     float: right;
@@ -113,4 +117,67 @@ section{
     position: absolute;
     bottom: 120px;
     right: 140px;
+}
+
+/*This is a conbination from .intro h2 and .steps h2*/
+.section-title{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+.primary-border{
+    border-color: #fce138;
+}
+.secondary-border {
+    border-color: #39a6b2;
+}
+
+/*This is the what-we-do sector*/
+.intro {
+    text-align: center;
+}
+.intro p{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    /*you can use either display: inline-block to center the 
+    text back or you can use:*/
+    margin: 0 auto;
+}
+
+/*This is to stylize the what-you-do sector*/
+.steps{
+    text-align: center;
+    background: #fce138;
+}
+
+.steps h3{
+    font-size: 45px;
+    color: #024e76;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.steps div{
+    margin-bottom: 80px;
+}
+.steps img{
+    width: 15%;
+    margin: 10px 0;
+}
+
+.steps h3{
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+.steps p{
+    color: #39a6b2;
+    font-size: 23px;
+}
+.steps span{
+    font-size: 38px;
 }
