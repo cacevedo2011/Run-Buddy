@@ -144,11 +144,13 @@ section{
 /*This is a conbination from .intro h2 and .steps h2*/
 .section-title {
     font-size: 55px;
-    display: inline-block;
-    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    margin-bottom: 35px;
     color: #024e76;
+    /*This is to add flex*/
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
 .primary-border{
     border-color: #fce138;
@@ -158,9 +160,6 @@ section{
 }
 
 /*This is the what-we-do section*/
-.intro {
-    text-align: center;
-}
 .intro p{
     line-height: 1.7;
     color: #39a6b2;
@@ -169,11 +168,11 @@ section{
     /*you can use either display: inline-block to center the 
     text back or you can use:*/
     margin: 0 auto;
+    text-align: center;
 }
 
 /*This is to stylize the what-you-do secion*/
 .steps{
-    text-align: center;
     background: #fce138;
 }
 
@@ -208,7 +207,7 @@ section{
 /*This is to stylize the your-trainers section*/
 
 .trainers{
-    text-align: center;
+
 }
 .trainer{
     width: 900px;
@@ -233,6 +232,9 @@ section{
 .text-right{
     text-align: right;
 }
+.flex-row{
+    display: flex;
+}
 .trainer-bio h3{
     font-size: 32px;
     margin-bottom: 8px;
@@ -249,18 +251,17 @@ section{
 
 /* REACH OUT STYLES START */
 .contact {
-    text-align: center;
     background: #024e76;
-  }
+}
 
 .contact h2 {
     color: #fce138;
-  }
+}
 
 .contact-info iframe {
     width: 400px;
     height: 400px;
-  }
+}
     
 .contact-info {
     width: 410px;
@@ -270,24 +271,23 @@ section{
     margin: 30px 0 0 60px;
     color: white;
 
-  }
+}
 
-  .contact-info h3 {
+.contact-info h3 {
     color: #fce138;
     font-size: 32px;
-  }
+}
   
-  .contact-info p, .contact-info address {
+.contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
     font-style: normal;
-  }
+}
   
-  .contact-info a {
+.contact-info a {
     color: #fce138;
-  }
+}
   
   /* REACH OUT STYLES END */
 
-  
